@@ -1,8 +1,9 @@
 ## localStorage 在客户端存储数据
-HTML5 提供了两种在客户端存储数据的新方法：
-localStorage - 没有时间限制的数据存储
-sessionStorage - 针对一个 session 的数据存储
-cookie - 主要用途有保存登录信息，比如你登录某个网站市场可以看到“记住密码”，这通常就是通过在 Cookie 中存入一段辨别用户身份的数据来实现的但是. cookie 不适合大量数据的存储，因为它们由每个对服务器的请求来传递，这使得 cookie 速度很慢而且效率也不高。
+
+####HTML5 提供了两种在客户端存储数据的新方法：
+- localStorage - 没有时间限制的数据存储
+- sessionStorage - 针对一个 session 的数据存储
+- cookie - 主要用途有保存登录信息，比如你登录某个网站市场可以看到“记住密码”，这通常就是通过在 Cookie 中存入一段辨别用户身份的数据来实现的但是. cookie 不适合大量数据的存储，因为它们由每个对服务器的请求来传递，这使得 cookie 速度很慢而且效率也不高。
 在 HTML5 中，数据不是由每个服务器请求传递的，而是只有在请求时使用数据。它使在不影响网站性能的情况下存储大量数据成为可能。
 
 #### Usage:
@@ -66,8 +67,8 @@ Value of retrievedObject: [object Object]
 common error:
 1. running the .click code before the element is in the DOM (i.e. before the DOM ready event.
 
-  DOMContentLoaded - the whole document (HTML, scripts) has been loaded.
-  load - the whole document and its resources (e.g. images, iframes, scripts) have been loaded.
+  - DOMContentLoaded - the whole document (HTML, scripts) has been loaded.
+  - load - the whole document and its resources (e.g. images, iframes, scripts) have been loaded.
 
   ```
     document.addEventListener("DOMContentLoaded", function(event) {
