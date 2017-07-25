@@ -1,0 +1,19 @@
+{
+  "name": "student-report-card-web",
+  "version": "1.0.0",
+  "description": "a console oriented page server implementation, alongside ActiveRecord and Dispatcher demos.",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "webpack --devtool source-map && webpack-dev-server --inline --hot --open"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^3.3.0",
+    "webpack-dev-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
+  }
+}

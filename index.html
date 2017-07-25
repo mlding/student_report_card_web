@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap practise</title>
+    <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+      crossorigin="anonymous">
+    </script>
+    <script src="./bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="./app.css" />
+</head>
+<body>
+  <div class="container">
+      <h2>学生成绩单（web版）</h2>
+      <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#showAll" class="all-tab">所有学生成绩</a></li>
+        <li><a data-toggle="tab" href="#query" class="query-tab">查询学生成绩</a></li>
+        <li><a data-toggle="tab" href="#add" class="add-tab">增加学生成绩</a></li>
+        <li><a data-toggle="tab" href="#alter" class="alter-tab">修改学生成绩</a></li>
+        <li><a data-toggle="tab" href="#delete" class="delete-tab">删除学生成绩</a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div id="showAll" class="tab-pane fade in active">
+          <table class="table">
+            <tr>
+              <th>Name</th>
+              <th>StudentNum</th>
+              <th>Ethnic</th>
+              <th>Class</th>
+              <th>MandarinScore</th>
+              <th>MathScore</th>
+              <th>EnglishScore</th>
+              <th>ProgrammingScore</th>
+            </tr>
+          </table>
+        </div>
+        <div id="query" class="tab-pane fade">
+          <div class="label-input">
+            <input type="text" class="form-control" id="numList" placeholder="Num, Num">
+            <button class="btn btn-default" id="queryBtn">Query</button>
+
+            <h3>成绩单</h3>
+            <table class="table">
+              <tr>
+                <th>姓名</th>
+                <th>数学</th>
+                <th>语文</th>
+                <th>英语</th>
+                <th>编程</th>
+                <th>平均分</th>
+                <th>总分</th>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div id="add" class="tab-pane fade">
+          <form class="form-inline">
+            <div class="form-group">
+              <div class="label-input">
+                <label for="inputName">Name</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Name">
+              </div>
+              <div class="label-input">
+                <label for="inputNum">StudentNum</label>
+                <input type="text" class="form-control" id="inputNum" placeholder="StudentNum">
+              </div>
+              <div class="label-input">
+                <label for="ethnic">Ethnic</label>
+                <input type="text" class="form-control" id="ethnic" placeholder="Ethnic">
+              </div>
+              <div class="label-input">
+                <label for="inputClass">Class</label>
+                <input type="text" class="form-control" id="inputClass" placeholder="Class">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="label-input">
+                <label for="inputMandarinScore">MandarinScore</label>
+                <input type="text" class="form-control" id="inputMandarinScore" placeholder="MandarinScore">
+              </div>
+              <div class="label-input">
+                <label for="inputMathScore">MathScore</label>
+                <input type="text" class="form-control" id="inputMathScore" placeholder="MathScore">
+              </div>
+              <div class="label-input">
+                <label for="inputEnglishScore">EnglishScore</label>
+                <input type="text" class="form-control" id="inputEnglishScore" placeholder="EnglishScore">
+              </div>
+              <div class="label-input">
+                <label for="inputProgrammingScore">MathScore</label>
+                <input type="text" class="form-control" id="inputProgrammingScore" placeholder="MathScore">
+              </div>
+            </div>
+            <div class="btns">
+              <button type="reset" class="btn btn-default">Reset</button>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </div>
+        </form>
+        </div>
+        <div id="alter" class="tab-pane fade">
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./static/bundle.js"></script>
+</body>
+</html>
