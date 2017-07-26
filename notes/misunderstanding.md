@@ -7,6 +7,8 @@
 在 HTML5 中，数据不是由每个服务器请求传递的，而是只有在请求时使用数据。它使在不影响网站性能的情况下存储大量数据成为可能。
 
 #### Usage:
+[localStorage](http://codular.com/localstorage)
+
 ```
 localStorage.setItem("b","isaac");//设置b为"isaac"
 var b = localStorage.getItem("b");//获取b的值,为"isaac"
