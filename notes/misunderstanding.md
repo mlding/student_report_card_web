@@ -1,6 +1,6 @@
 ## localStorage 在客户端存储数据
 
-####HTML5 提供了两种在客户端存储数据的新方法：
+#### HTML5 提供了两种在客户端存储数据的新方法：
 - localStorage - 没有时间限制的数据存储
 - sessionStorage - 针对一个 session 的数据存储
 - cookie - 主要用途有保存登录信息，比如你登录某个网站市场可以看到“记住密码”，这通常就是通过在 Cookie 中存入一段辨别用户身份的数据来实现的但是. cookie 不适合大量数据的存储，因为它们由每个对服务器的请求来传递，这使得 cookie 速度很慢而且效率也不高。
@@ -59,6 +59,16 @@ typeof retrievedObject: string
 Value of retrievedObject: [object Object]
 ```
 
+## 浏览器 HTML
+[浏览器加载，解析，渲染](http://www.jianshu.com/p/e141d1543143)
+将script标签放到body底端，的确 这样不会影响dom树的构建，不会影响渲染树的生成，不会阻塞其他资源的下载
+
+## DOM
+
+[DOM 1](https://github.com/stone0090/javascript-lessons/tree/master/2.2-DOM)   
+
+[DOM 2](https://github.com/stone0090/javascript-lessons/blob/master/2.2-DOM/README2.md)
+
 ## event
 
 ### 三种方式可以为DOM元素注册事件处理函数:
@@ -104,5 +114,8 @@ W3C很巧妙地在这场对抗中保持中立：任何W3C事件模型中发生�
 作为Web开发者，可以选择是否在捕获或者冒泡的阶段注册事件，这是通过addEventListener()方法来实现的。
 如果addEventListener()的最后一个参数设置为true，那么这个事件是在捕获阶段被触发的；
 如果设置为false则是在冒泡阶段被触发。
-element1.addEventListener('click',doSomething2,true)
-element2.addEventListener('click',doSomething,false)
+
+```
+element1.addEventListener('click', doSomething2, true)    
+element2.addEventListener('click', doSomething, false)
+```
